@@ -81,4 +81,48 @@ class FilmController extends Controller
         }
         return view("films.list", ["films" => $films_filtered, "title" => $title]);
     }
+
+    public function listFilmsByYear($year = null)
+    {
+        $films_filtered = [];
+
+        $title = "Listado de todas las pelis";
+        $films = FilmController::readFilms();
+
+        //if year and genre are null
+        if (is_null($year))
+            return view('films.list', ["films" => $films, "title" => $title]);
+
+        //list based on year or genre informed
+        foreach ($films as $film) {
+            if ((!is_null($year)) && $film['year'] == $year){
+                $title = "Listado de todas las pelis filtrado x año";
+                $films_filtered[] = $film;
+            }
+        }
+        return view("films.list", ["films" => $films_filtered, "title" => $title]);
+    }
+
+    public function listFilmsByGenre($genre = null)
+    {
+        $films_filtered = [];
+
+        $title = "Listado de todas las pelis";
+        $films = FilmController::readFilms();
+
+        //if year and genre are null
+        if (is_null($genre))
+            return view('films.list', ["films" => $films, "title" => $title]);
+
+        //list based on year or genre informed
+        foreach ($films as $film) {
+             if((!is_null($genre)) && strtolower($film['genre']) == strtolower($genre)){
+                $title = "Listado de todas las pelis filtrado x categoria";
+                $films_filtered[] = $film;
+            }
+        }
+        return view("films.list", ["films" => $films_filtered, "title" => $title]);
+    }
+
+    //listFilmsByGenre
 }
