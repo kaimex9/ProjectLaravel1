@@ -131,4 +131,13 @@ class FilmController extends Controller
       
         return view("films.list", ["films" => $films, "title" => $title]);
     }
+
+    public function countFilms()
+    {
+        $title = "El numero de peliculas es: ";
+        $films = FilmController::readFilms();
+        $count = count($films);
+      
+        return view("films.count", ["count" => $count, "title" => $title]);
+    }
 }
