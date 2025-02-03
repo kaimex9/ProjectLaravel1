@@ -30,7 +30,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Include any additional HTML or Blade directives here -->
-
+     <h2>Añadir Pelicula</h2>
+    <form action="" method="POST">
+        <label>
+            Nombre: <input type="text" name="name">
+        </label>
+        <br>
+        <label>
+            Año: <input type="number" name="year">
+        </label>
+        <br>
+        <label>
+            Genero: <input type="text" name="genre">
+        </label>
+        <br>
+        <label>
+            Pais: <input type="text" name="country">
+        </label>
+        <br>
+        <label>
+            Duracion: <input type="text" name="duration">
+        </label>
+        <br>
+        <label>
+            Imagen URL: <input type="text" name="image">
+        </label>
+        <br>
+        <input type="submit" value="Enviar" name="send">
+    </form>
 </body>
 
 </html>
