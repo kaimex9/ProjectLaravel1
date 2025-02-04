@@ -140,4 +140,9 @@ class FilmController extends Controller
       
         return view("films.count", ["count" => $count, "title" => $title]);
     }
+
+    public function createFilm(){
+        //Aqui añadir una palicula com Json y llamar a la funcion listFilms para actualizar los datos
+        
+    }
 }

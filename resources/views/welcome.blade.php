@@ -31,7 +31,8 @@
 
     <!-- Include any additional HTML or Blade directives here -->
      <h2>Añadir Pelicula</h2>
-    <form action="" method="POST">
+    <form action="{{route('createFilm')}}" method="POST">
+        @csrf
         <label>
             Nombre: <input type="text" name="name">
         </label>
