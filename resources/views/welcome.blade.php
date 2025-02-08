@@ -30,9 +30,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Include any additional HTML or Blade directives here -->
-     <h2>Añadir Pelicula</h2>
+
+    <h2>Añadir Pelicula</h2>
     <form action="{{route('createFilm')}}" method="POST">
-        @csrf
+        {{ csrf_field() }}
         <label>
             Nombre: <input type="text" name="name">
         </label>
@@ -54,7 +55,7 @@
         </label>
         <br>
         <label>
-            Imagen URL: <input type="text" name="image">
+            Imagen URL: <input type="text" name="img_url">
         </label>
         <br>
         <input type="submit" value="Enviar" name="send">

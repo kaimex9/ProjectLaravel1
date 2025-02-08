@@ -1,11 +1,11 @@
 [
     {
-        "name": "La Rosa Púrpura del Cairo",
+        "name": "La Rosa P\u00farpura del Cairo",
         "year": 1985,
         "genre": "Drama",
         "country": "example",
         "duration": "1:27",
-        "img_url": "https://es.web.img2.acsta.net/medias/nmedia/18/79/45/34/20253823.jpg"
+        "img_url": "https:\/\/es.web.img2.acsta.net\/medias\/nmedia\/18\/79\/45\/34\/20253823.jpg"
     },
     {
         "name": "El Club de los Cinco",
@@ -13,7 +13,7 @@
         "genre": "Comedia",
         "country": "example",
         "duration": "1:27",
-        "img_url": "https://pics.filmaffinity.com/El_club_de_los_cinco-192309838-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/El_club_de_los_cinco-192309838-large.jpg"
     },
     {
         "name": "Forrest Gump",
@@ -21,15 +21,15 @@
         "genre": "Drama",
         "country": "example",
         "duration": "1:27",
-        "img_url": "https://pics.filmaffinity.com/Forrest_Gump-212765827-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/Forrest_Gump-212765827-large.jpg"
     },
     {
         "name": "Arrival",
         "year": 2016,
-        "genre": "Ciencia Ficción",
+        "genre": "Ciencia Ficci\u00f3n",
         "country": "example",
         "duration": "1:27",
-        "img_url": "https://pics.filmaffinity.com/La_llegada-686966912-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/La_llegada-686966912-large.jpg"
     },
     {
         "name": "As Bestas",
@@ -37,6 +37,22 @@
         "genre": "Drama",
         "country": "example",
         "duration": "1:27",
-        "img_url": "https://pics.filmaffinity.com/As_bestas-275688233-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/As_bestas-275688233-large.jpg"
+    },
+    {
+        "name": "Skibidi toilet peli",
+        "year": "2025",
+        "genre": "Drama",
+        "country": "Spain",
+        "duration": "1:30",
+        "img_url": "https:\/\/i.blogs.es\/d225d6\/skibidi-toilet-wiki\/1366_2000.jpeg"
+    },
+    {
+        "name": "Kung fu panda",
+        "year": "2005",
+        "genre": "Accion",
+        "country": "si",
+        "duration": "1:60",
+        "img_url": "https:\/\/m.media-amazon.com\/images\/S\/pv-target-images\/cc55f224f673b8e495c590f7ef5528e60ad1c5833360649a4136ac1e31de682e.jpg"
     }
 ]

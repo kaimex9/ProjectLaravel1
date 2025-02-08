@@ -31,7 +31,7 @@ Route::middleware('year')->group(function () {
         Route::get('countFilms', [FilmController::class, "countFilms"])->name('countFilms');
     });
 });
-Route::middleware('validateUrl')->group(function () {
+Route::middleware('url')->group(function () {
     Route::group(['prefix' => 'filmin'], function () {
         Route::post('createFilm', [FilmController::class, "createFilm"])->name('createFilm');
     });

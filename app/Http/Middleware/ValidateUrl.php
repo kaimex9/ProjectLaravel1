@@ -5,14 +5,14 @@ use Closure;
 use Illuminate\Http\Request;
 class ValidateUrl
 {
-    public function valURL(Request $request, Closure $next)
+    public function handle(Request $request, Closure $next)
     {
-        $url = $request->route('url');
+        $url = $request->input('img_url');
 
-        if (isset($url)) {
-            //Queda por validar
-            //Si el la url no es valida: return view("example");
+        if (filter_var($url, FILTER_VALIDATE_URL)) {
             return $next($request);
+        } else {
+            return response(view("welcome", ["status" => "Error, la url imagen no es correcta"]));
         }
     }
 }
