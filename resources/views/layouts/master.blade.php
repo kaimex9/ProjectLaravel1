@@ -4,59 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
 </head>
 <style>
-    body{
-    margin: 0px!important;
-}
+    body {
+        margin: 0px !important;
+    }
 
-h1{
-    text-align: center;
-    margin: 20px 0px 20px 0px;
-}
+    h1 {
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+    }
 
-.header {
-    width: 99vw;
-    /* 100% del ancho de la pantalla */
-    overflow: hidden;
-    /* Evita que la imagen se desborde */
-}
+    .header {
+        width: 99vw;
+        /* 100% del ancho de la pantalla */
+        overflow: hidden;
+        /* Evita que la imagen se desborde */
+    }
 
-.header-img {
-    width: 100%;
-    /* Ocupar todo el ancho */
-    height: 300px;
-    /* Ajusta la altura a tu gusto */
-    object-fit: cover;
-    /* Evita distorsión y recorta si es necesario */
-}
+    .header-img {
+        width: 100%;
+        /* Ocupar todo el ancho */
+        height: 300px;
+        /* Ajusta la altura a tu gusto */
+        object-fit: cover;
+        /* Evita distorsión y recorta si es necesario */
+    }
 
-.footer {
-    width: 99vw;
-    /* 100% del ancho de la pantalla */
-    overflow: hidden;
-    /* Evita que la imagen se desborde */
-}
+    .footer {
+        width: 99vw;
+        /* 100% del ancho de la pantalla */
+        overflow: hidden;
+        /* Evita que la imagen se desborde */
+    }
 
-.footer-img {
-    width: 100%;
-    /* Ocupar todo el ancho */
-    height: 300px;
-    /* Ajusta la altura a tu gusto */
-    object-fit: cover;
-    /* Evita distorsión y recorta si es necesario */
-}
+    .footer-img {
+        width: 100%;
+        /* Ocupar todo el ancho */
+        height: 300px;
+        /* Ajusta la altura a tu gusto */
+        object-fit: cover;
+        /* Evita distorsión y recorta si es necesario */
+    }
 
-.content{
-    display: flex;
-    width: 100%;
-    margin: 0px!important;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    .content {
+        display: flex;
+        width: 100%;
+        margin: 0px !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 </style>
 
 <body>

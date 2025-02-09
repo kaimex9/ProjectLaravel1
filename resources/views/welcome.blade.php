@@ -30,6 +30,7 @@
         <li><a href=/filmout/sortFilms>Pelis ordenadas por año(descendiente)</a></li>
         <li><a href=/filmout/countFilms>Numero de peliculas</a></li>
     </ul>
+    
     <!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -38,6 +39,9 @@
     <!-- Include any additional HTML or Blade directives here -->
 
     <h2>Añadir Pelicula</h2>
+    @if (!@empty($status))
+        <p style="color:red;">{{$status}}</p>
+    @endif
     <form action="{{route('createFilm')}}" method="POST">
         {{ csrf_field() }}
         <label>
