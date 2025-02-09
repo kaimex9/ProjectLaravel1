@@ -12,7 +12,13 @@
     <!-- Include any additional stylesheets or scripts here -->
 </head>
 
-<body class="container">
+<body>
+    @extends('layouts.master')
+    @section('header')
+    @parent()
+    @endsection
+
+    @section('content')
 
     <h1 class="mt-4">Lista de Peliculas</h1>
     <ul>
@@ -60,6 +66,10 @@
         <br>
         <input type="submit" value="Enviar" name="send">
     </form>
+    @endsection
+    @section('footer')
+    @parent
+    @endsection
 </body>
 
 </html>
