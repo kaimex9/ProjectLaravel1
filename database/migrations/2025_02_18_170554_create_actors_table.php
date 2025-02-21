@@ -27,6 +27,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        //1. revisar los downs 2. drop schema 3. renombrar migrations 4. migrar
+        Schema::dropIfExists('actors');
     }
 };
