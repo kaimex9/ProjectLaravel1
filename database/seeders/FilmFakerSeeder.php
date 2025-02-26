@@ -19,11 +19,13 @@ class FilmFakerSeeder extends Seeder
         //Obtenemos el último id insertado
         $lastInsertedId = DB::table("films")->max("id");
         //Generamos 20 elementos de tipo aleatorio.
+        $genres = ["thriller","action", "drama","love values"];
         for ($i = 0; $i < 10; $i++) {
+            $num = rand(0, 3);  
             DB::table("films")->insert([
                 "name" => $faker->sentence(3),
                 "year" => $faker->year(),
-                "genre" => $faker->word(),
+                "genre" => $genres[$num],
                 "country" => $faker->countryCode,
                 "duration" => $faker->numberBetween(10, 999),
                 "img_url" => $faker->imageUrl(640, 480, "movies", true),
