@@ -15,64 +15,70 @@
 <body>
     @extends('layouts.master')
     @section('header')
-    @parent()
+        @parent()
     @endsection
 
     @section('content')
 
-    <h1 class="mt-4">Lista de Peliculas</h1>
-    <ul>
-        <li><a href=/filmout/oldFilms>Pelis antiguas</a></li>
-        <li><a href=/filmout/newFilms>Pelis nuevas</a></li>
-        <li><a href=/filmout/films>Pelis</a></li>
-        <li><a href=/filmout/filmsByYear>Pelis ordenadas por año</a></li>
-        <li><a href=/filmout/filmsByGenre>Pelis agrupadas por genero</a></li>
-        <li><a href=/filmout/sortFilms>Pelis ordenadas por año(descendiente)</a></li>
-        <li><a href=/filmout/countFilms>Numero de peliculas</a></li>
-    </ul>
-    
-    <!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <h1 class="mt-4">Lista de Peliculas</h1>
+        <ul>
+            <li><a href=/filmout/oldFilms>Pelis antiguas</a></li>
+            <li><a href=/filmout/newFilms>Pelis nuevas</a></li>
+            <li><a href=/filmout/films>Pelis</a></li>
+            <li><a href=/filmout/filmsByYear>Pelis ordenadas por año</a></li>
+            <li><a href=/filmout/filmsByGenre>Pelis agrupadas por genero</a></li>
+            <li><a href=/filmout/sortFilms>Pelis ordenadas por año(descendiente)</a></li>
+            <li><a href=/filmout/countFilms>Numero de peliculas</a></li>
 
-    <!-- Include any additional HTML or Blade directives here -->
+        </ul>
+        <h1 class="mt-4">Lista de Actores</h1>
+        <ul>
+            <li><a href="/actorout/countActors">Numero de actores</a></li>
+            <li><a href="/actorout/listActors">Lista de Actores</a></li>
+        </ul>
 
-    <h2>Añadir Pelicula</h2>
-    @if (!@empty($status))
-        <p style="color:red;">{{$status}}</p>
-    @endif
-    <form action="{{route('createFilm')}}" method="POST">
-        {{ csrf_field() }}
-        <label>
-            Nombre: <input type="text" name="name">
-        </label>
-        <br>
-        <label>
-            Año: <input type="number" name="year">
-        </label>
-        <br>
-        <label>
-            Genero: <input type="text" name="genre">
-        </label>
-        <br>
-        <label>
-            Pais: <input type="text" name="country">
-        </label>
-        <br>
-        <label>
-            Duracion: <input type="text" name="duration">
-        </label>
-        <br>
-        <label>
-            Imagen URL: <input type="text" name="img_url">
-        </label>
-        <br>
-        <input type="submit" value="Enviar" name="send">
-    </form>
+        <!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!-- Include any additional HTML or Blade directives here -->
+
+        <h2>Añadir Pelicula</h2>
+        @if (!@empty($status))
+            <p style="color:red;">{{$status}}</p>
+        @endif
+        <form action="{{route('createFilm')}}" method="POST">
+            {{ csrf_field() }}
+            <label>
+                Nombre: <input type="text" name="name">
+            </label>
+            <br>
+            <label>
+                Año: <input type="number" name="year">
+            </label>
+            <br>
+            <label>
+                Genero: <input type="text" name="genre">
+            </label>
+            <br>
+            <label>
+                Pais: <input type="text" name="country">
+            </label>
+            <br>
+            <label>
+                Duracion: <input type="text" name="duration">
+            </label>
+            <br>
+            <label>
+                Imagen URL: <input type="text" name="img_url">
+            </label>
+            <br>
+            <input type="submit" value="Enviar" name="send">
+        </form>
     @endsection
     @section('footer')
-    @parent
+        @parent
     @endsection
 </body>
 

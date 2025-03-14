@@ -16,7 +16,7 @@ class FilmController extends Controller
     {
         $films = Storage::json('/public/films.json');
         $dbFilms = DB::table('films')->get();
-        return [$films, $dbFilms];
+        return $films;
     }
     /**
      * List films older than input year 
