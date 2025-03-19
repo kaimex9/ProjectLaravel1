@@ -38,7 +38,11 @@ Route::middleware('url')->group(function () {
     });
 });
 
-Route::group(['prefix' => 'actorout'], function () {
-    Route::get('countActors', [ActorController::class, "countActors"])->name('countActors');
-    Route::get('listActors', [ActorController::class, "listActors"])->name('listActors');
+Route::middleware('year')->group(function () {
+    Route::group(['prefix' => 'actorout'], function () {
+        Route::get('countActors', [ActorController::class, "countActors"])->name('countActors');
+        Route::get('listActors', [ActorController::class, "listActors"])->name('listActors');
+        Route::get('listActorsByDecade/{year?}', [ActorController::class, "listActorsByDecade"])->name('listActorsByDecade');
+        Route::get('destroyActor/{id}', [ActorController::class, "destroyActor"])->name('destroyActor');
+    });
 });

@@ -35,6 +35,16 @@
         <ul>
             <li><a href="/actorout/countActors">Numero de actores</a></li>
             <li><a href="/actorout/listActors">Lista de Actores</a></li>
+            <li><form action="/actorout/listActorsByDecade" method="get">
+                    Decada nacimiento <select name="year">
+                    <option value="1980">1980-1989</option>
+                    <option value="1990">1990-1999</option>
+                    <option value="2000">2000-2009</option>
+                    <option value="2010">2010-2019</option>
+                </select>
+                <input type="submit" value="enviar">
+            </form></li>
+            <li></li>
         </ul>
 
         <!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
