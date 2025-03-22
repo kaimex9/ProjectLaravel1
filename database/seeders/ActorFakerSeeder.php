@@ -21,7 +21,7 @@ class ActorFakerSeeder extends Seeder
         //Generamos 20 elementos de tipo aleatorio.
         for ($i = 0; $i < 10; $i++) {
             DB::table("actors")->insert([
-                "name" => $faker->sentence(3), // Nombre aleatorio de 3 palabras
+                "name" => $faker->sentence(2), // Nombre aleatorio de 3 palabras
                 "surname" => $faker->lastName(), // Un apellido en lugar de un año
                 "birthdate" => $faker->date("Y-m-d"), // Fecha realista en formato 'YYYY-MM-DD'
                 "country" => $faker->countryCode, // Código de país (ej: "US", "ES")
