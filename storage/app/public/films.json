@@ -54,5 +54,252 @@
         "country": "Spain",
         "duration": "3:10",
         "img_url": "https:\/\/www.lavanguardia.com\/peliculas-series\/images\/movie\/poster\/2010\/7\/w1280\/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Nostrum et.",
+        "year": 2005,
+        "genre": "action",
+        "country": "FM",
+        "duration": 860,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ff00?text=movies+nulla",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 28,
+        "name": "Vero odit vel.",
+        "year": 1983,
+        "genre": "action",
+        "country": "MA",
+        "duration": 26,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00bb33?text=movies+itaque",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 29,
+        "name": "Facere blanditiis dolore.",
+        "year": 1984,
+        "genre": "action",
+        "country": "MA",
+        "duration": 678,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ee11?text=movies+quos",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 30,
+        "name": "Excepturi voluptas.",
+        "year": 1982,
+        "genre": "action",
+        "country": "NC",
+        "duration": 419,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/000044?text=movies+et",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 31,
+        "name": "Atque itaque.",
+        "year": 2004,
+        "genre": "love values",
+        "country": "GR",
+        "duration": 490,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/0044cc?text=movies+iure",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 32,
+        "name": "Eveniet id quas facere.",
+        "year": 2018,
+        "genre": "thriller",
+        "country": "GE",
+        "duration": 263,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ccaa?text=movies+distinctio",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 33,
+        "name": "Cumque est delectus voluptatum accusantium.",
+        "year": 2000,
+        "genre": "drama",
+        "country": "EE",
+        "duration": 111,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/003377?text=movies+ut",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 34,
+        "name": "Nemo in necessitatibus doloremque quia.",
+        "year": 2013,
+        "genre": "thriller",
+        "country": "SG",
+        "duration": 387,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ee11?text=movies+velit",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 35,
+        "name": "Laudantium voluptas enim.",
+        "year": 1991,
+        "genre": "thriller",
+        "country": "BS",
+        "duration": 315,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/009933?text=movies+consequuntur",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 36,
+        "name": "Fugiat est enim rerum.",
+        "year": 2001,
+        "genre": "action",
+        "country": "FR",
+        "duration": 145,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ffcc?text=movies+blanditiis",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "name": "example",
+        "year": "32141",
+        "genre": "sbgklbsg",
+        "country": "yhdsbvghfkb",
+        "duration": "289327874",
+        "img_url": "https:\/\/www.tooltyp.com\/wp-content\/uploads\/2014\/10\/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Nostrum et.",
+        "year": 2005,
+        "genre": "action",
+        "country": "FM",
+        "duration": 860,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ff00?text=movies+nulla",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 28,
+        "name": "Vero odit vel.",
+        "year": 1983,
+        "genre": "action",
+        "country": "MA",
+        "duration": 26,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00bb33?text=movies+itaque",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 29,
+        "name": "Facere blanditiis dolore.",
+        "year": 1984,
+        "genre": "action",
+        "country": "MA",
+        "duration": 678,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ee11?text=movies+quos",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 30,
+        "name": "Excepturi voluptas.",
+        "year": 1982,
+        "genre": "action",
+        "country": "NC",
+        "duration": 419,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/000044?text=movies+et",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 31,
+        "name": "Atque itaque.",
+        "year": 2004,
+        "genre": "love values",
+        "country": "GR",
+        "duration": 490,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/0044cc?text=movies+iure",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 32,
+        "name": "Eveniet id quas facere.",
+        "year": 2018,
+        "genre": "thriller",
+        "country": "GE",
+        "duration": 263,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ccaa?text=movies+distinctio",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 33,
+        "name": "Cumque est delectus voluptatum accusantium.",
+        "year": 2000,
+        "genre": "drama",
+        "country": "EE",
+        "duration": 111,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/003377?text=movies+ut",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 34,
+        "name": "Nemo in necessitatibus doloremque quia.",
+        "year": 2013,
+        "genre": "thriller",
+        "country": "SG",
+        "duration": 387,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ee11?text=movies+velit",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 35,
+        "name": "Laudantium voluptas enim.",
+        "year": 1991,
+        "genre": "thriller",
+        "country": "BS",
+        "duration": 315,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/009933?text=movies+consequuntur",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 36,
+        "name": "Fugiat est enim rerum.",
+        "year": 2001,
+        "genre": "action",
+        "country": "FR",
+        "duration": 145,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ffcc?text=movies+blanditiis",
+        "created_at": "2025-02-26 18:37:50",
+        "updated_at": "2025-02-26 18:37:50"
+    },
+    {
+        "id": 37,
+        "name": "example2",
+        "year": 2738,
+        "genre": "aaaaa",
+        "country": "fsjbdghfkl",
+        "duration": 1423513,
+        "img_url": "https:\/\/empresas.blogthinkbig.com\/wp-content\/uploads\/2019\/11\/Imagen3-245003649.jpg?fit=960%2C720",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "name": "FINAL EXAMPLE",
+        "year": "1278",
+        "genre": "afvgadfk",
+        "country": "dahfbh",
+        "duration": "fbsdhblf",
+        "img_url": "https:\/\/ethic.es\/wp-content\/uploads\/2023\/03\/imagen.jpg"
     }
 ]
