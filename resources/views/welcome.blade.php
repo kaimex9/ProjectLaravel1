@@ -29,8 +29,6 @@
             <li><a href=/filmout/filmsByGenre>Pelis agrupadas por genero</a></li>
             <li><a href=/filmout/sortFilms>Pelis ordenadas por año(descendiente)</a></li>
             <li><a href=/filmout/countFilms>Numero de peliculas</a></li>
-            <li><a href=/filmout/countFilms>Eliminar Pelicula</a></li>
-
         </ul>
         <h1 class="mt-4">Lista de Actores</h1>
         <ul>
@@ -45,7 +43,6 @@
                 </select>
                 <input type="submit" value="enviar">
             </form></li>
-            <li></li>
         </ul>
 
         <!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->

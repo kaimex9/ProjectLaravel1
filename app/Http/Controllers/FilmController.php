@@ -143,8 +143,10 @@ class FilmController extends Controller
 
     public function countFilms()
     {
-        $title = "Contador de Peliculas";
-        $count = count(DB::table('films')->get());
+        //Aqui lo que hago es recoger el array que devuelve ReadFilms y contar el número de elementos
+        $films = FilmController::readFilms();
+        $count = count($films);
+        $title = "El numero de peliculas es: ";
 
         return view("films.count", ["count" => $count, "title" => $title]);
     }
