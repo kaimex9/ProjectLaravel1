@@ -4,22 +4,26 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Film;
+
 
 
 class FilmController extends Controller
 {
-
+    
     /**
      * Read films from storage
      */
+
     public static function readFilms(): array
     {
+        // Read films from JSON storage
         $films = Storage::json('/public/films.json');
-        $dbFilms = DB::table('films')->get();
-        $convertedFilms = array_map(function ($film) {
-            return (array) $film;
-        }, $dbFilms->toArray());
+        $dbFilms = Film::all();
+        $convertedFilms = $dbFilms->toArray();
+
         $finalArray = array_merge($films, $convertedFilms);
+
         return $finalArray;
     }
     /**
@@ -168,7 +172,7 @@ class FilmController extends Controller
             }
         } elseif ($storageFlag === 'DB') {
             if (!FilmController::isFilm($newFilm['name'])) {
-                DB::table('films')->insert($newFilm);
+                Film::create($newFilm);
             }
         }
 
@@ -184,5 +188,9 @@ class FilmController extends Controller
             }
         }
         return false;
+    }
+
+    public static function listFilmsWithActors(){
+        //Aqui 
     }
 }
