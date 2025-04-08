@@ -53,4 +53,10 @@ class ActorController extends Controller
 
         return response()->json(['result' => false]);
     }
+
+    public function listActorsWithMovies()
+    {
+        $actorsWithFilms = Actor::with('films')->get();
+        return response()->json($actorsWithFilms);
+    }
 }

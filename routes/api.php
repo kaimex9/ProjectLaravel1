@@ -22,5 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //Ruta para eliminar un actor
 Route::delete('destroyActor/{id}', [ActorController::class, "destroyActor"])->name('destroyActor');
-
+//Ruta para listar las peliculas con sus actores
 Route::get('films', [FilmController::class, "listFilmsWithActors"])->name('listFilmsWithActors');
+//Ruta para listar los actores con sus peliculas
+Route::get('actors', [ActorController::class, "listActorsWithMovies"])->name('listActorsWithMovies');
+
