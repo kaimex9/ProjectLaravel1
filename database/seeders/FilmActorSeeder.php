@@ -14,6 +14,20 @@ class FilmActorSeeder extends Seeder
      */
     public function run(): void
     {
+        // Asegurar que al menos una película tenga entre 1 y 3 actores
+        $filmId = DB::table("films")->inRandomOrder()->value("id"); // Seleccionar una película aleatoria
+        $actorIds = DB::table("actors")->inRandomOrder()->limit(rand(1, 3))->pluck("id"); // Seleccionar entre 1 y 3 actores aleatorios
+
+        foreach ($actorIds as $actorId) {
+            DB::table("films_actors")->insert([
+                "film_id" => $filmId,
+                "actor_id" => $actorId,
+                "created_at" => now(),
+                "updated_at" => now(),
+            ]);
+        }
+
+        // Continuar con relaciones aleatorias
         for ($i = 0; $i < 10; $i++) {
             DB::table("films_actors")->insert([
                 "film_id" => DB::table("films")->inRandomOrder()->value("id"), // ID aleatorio de films
