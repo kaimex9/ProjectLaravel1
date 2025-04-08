@@ -44,8 +44,13 @@ class ActorController extends Controller
 
     public function destroyActor($id)
     {
-        //Aqui a traves de postman se introducira el id del actor a eliminar
-        Actor::destroy($id);
-        return redirect()->route('listActors');
+        $actor = Actor::find($id);
+
+        if ($actor) {
+            $actor->delete();
+            return response()->json(['result' => true]);
+        }
+
+        return response()->json(['result' => false]);
     }
 }

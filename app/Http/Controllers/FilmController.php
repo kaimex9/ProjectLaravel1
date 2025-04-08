@@ -189,7 +189,10 @@ class FilmController extends Controller
         return false;
     }
 
-    public static function listFilmsWithActors(){
-        //Aqui 
-    }
+    public static function listFilmsWithActors()
+{
+    $filmsWithActors = Film::with('actors')->get();
+    // Retornar los datos como JSON
+    return response()->json($filmsWithActors);
+}
 }
